@@ -1,6 +1,6 @@
 # Apache2.4 configuration and templates
 
-Apache2.4 personnal configuration and web sites templates on Debian linux distribution.
+Apache2.4 personnal configuration and website templates on Debian linux distribution.
 
 *Note: I use this package for my own projects, it contains only the features I need.*
 
