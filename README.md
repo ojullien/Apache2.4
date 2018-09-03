@@ -33,9 +33,10 @@ When it starts, Apache2.4 includes the module configuration files (/etc/apache2/
 - zzz-evasive.conf: overrides the default EVASIVE module configuration.
 - zzz-expires.conf: overrides and extends the default expirations time by type.
 - zzz-headers.conf: adds few HTTP request and response headers customizations.
+- zzz-log.conf: overrides log configuration.
 - zzz-mime.conf: adds more mime types.
 - zzz-mpm_event.conf: overrides the event worker MPM default configuration.
-- zzz-php7.0-fpm.conf: configure the local php-fpm using proxy.
+- zzz-php7.x-fpm.conf: configure the local php-fpm using proxy.
 - zzz-proxy.conf: overrides the multi-protocol proxy/gateway server default configuration.
 - zzz-security.conf: overrides and adds more security configuration snippets for the server.
 - zzz-ssl.conf: SSL configuration.
