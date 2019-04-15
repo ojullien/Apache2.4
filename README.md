@@ -6,17 +6,13 @@ Apache2.4 personnal configuration and website templates on Debian linux distribu
 
 ## Table of Contents
 
-- [Requirements](#requirements)
-- [Configuration](#configuration)
-- [Templates](#templates)
-- [Documentation](#documentation)
-- [Contributing](#contributing)
-- [License](#license)
+[Requirements](#requirements) | [Configuration](#configuration) | [Templates](#templates) | [Documentation](#documentation) | [Contributing](#contributing) | [License](#license)
 
 ## Requirements
 
 - Debian linux distribution: ~9.1
-- apache: ~2.4.25,
+- apache: ~2.4.25
+  - ssl_module
 - openssl: ~1.1.0f
 
 ## Configuration
@@ -70,6 +66,7 @@ Module mod_http2 must be enable to provides HTTP/2 support in SSL.
 - app.tld: contains the name-based vhost configuration for a PHP application.
 - api.tld: contains the name-based vhost configuration for a mixed static website and PHP application.
 - redirect.tld: contains the configuration for a redirection.
+- reverseproxy.tld: configuration sample for a reverse proxy. proxy_module and proxy_http_module or proxy_http2_module are required.
 - loader.conf: one file to rule them all.
 
 ### How to setup the site templates
