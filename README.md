@@ -34,7 +34,7 @@ When it starts, Apache2.4 includes the module configuration files (/etc/apache2/
 - zzz-mpm_event.conf: overrides the event worker MPM default configuration.
 - zzz-php7.x-fpm.conf: configure the local php-fpm using proxy.
 - zzz-proxy.conf: overrides the multi-protocol proxy/gateway server default configuration.
--- zzz-remoteip.conf: overides remoteip configuration.
+- zzz-remoteip.conf: overides remoteip configuration.
 - zzz-security.conf: overrides and adds more security configuration snippets for the server.
 - zzz-ssl.conf: SSL configuration.
 - zzz-status.conf: overrides the status and info modules configurations.
