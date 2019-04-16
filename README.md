@@ -12,7 +12,7 @@ Apache2.4 personnal configuration and website templates on Debian linux distribu
 
 - Debian linux distribution: ~9.1
 - apache: ~2.4.25
-  - ssl_module
+  - Modules: alias, deflate, dir, env, evasive, expires, filter, headers, http2, include, rewrite, unique_id, ssl_module, proxy_module, proxy_http_module / proxy_http2_module, remoteip_module
 - openssl: ~1.1.0f
 
 ## Configuration
@@ -34,6 +34,7 @@ When it starts, Apache2.4 includes the module configuration files (/etc/apache2/
 - zzz-mpm_event.conf: overrides the event worker MPM default configuration.
 - zzz-php7.x-fpm.conf: configure the local php-fpm using proxy.
 - zzz-proxy.conf: overrides the multi-protocol proxy/gateway server default configuration.
+-- zzz-remoteip.conf: overides remoteip configuration.
 - zzz-security.conf: overrides and adds more security configuration snippets for the server.
 - zzz-ssl.conf: SSL configuration.
 - zzz-status.conf: overrides the status and info modules configurations.
@@ -66,7 +67,7 @@ Module mod_http2 must be enable to provides HTTP/2 support in SSL.
 - app.tld: contains the name-based vhost configuration for a PHP application.
 - api.tld: contains the name-based vhost configuration for a mixed static website and PHP application.
 - redirect.tld: contains the configuration for a redirection.
-- reverseproxy.tld: configuration sample for a reverse proxy. proxy_module and proxy_http_module or proxy_http2_module are required.
+- reverseproxy.tld: configuration sample for a reverse proxy. **remoteip_module**, **proxy_module** and **proxy_http_module** or/and **proxy_http2_module** are required.
 - loader.conf: one file to rule them all.
 
 ### How to setup the site templates
