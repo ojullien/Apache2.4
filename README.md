@@ -67,7 +67,9 @@ Module mod_http2 must be enable to provides HTTP/2 support in SSL.
 - app.tld: contains the name-based vhost configuration for a PHP application.
 - api.tld: contains the name-based vhost configuration for a mixed static website and PHP application.
 - redirect.tld: contains the configuration for a redirection.
-- reverseproxy.tld: configuration sample for a reverse proxy. **remoteip_module**, **proxy_module** and **proxy_http_module** or/and **proxy_http2_module** are required.
+- reverseproxy.tld: configuration sample for a reverse proxy.
+  - **remoteip_module**, **proxy_module** and **proxy_http_module** or/and **proxy_http2_module** are required.
+  - **conf-available/zzz-expires.conf** and **conf-available/zzz-headers.conf** should not be enabled.
 - loader.conf: one file to rule them all.
 
 ### How to setup the site templates
