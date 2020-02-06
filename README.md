@@ -61,7 +61,7 @@ Module mod_http2 must be enable to provides HTTP/2 support in SSL.
 
 ### Features
 
-- _common.conf: contains common snippets.
+- _common.conf: contains many files with common snippets.
 - 000-default: contains the default virtualhost configuration.
 - static.tld: contains the name-based vhost configuration for a static website.
 - app.tld: contains the name-based vhost configuration for a PHP application.
