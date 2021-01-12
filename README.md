@@ -28,6 +28,8 @@ When it starts, Apache2.4 includes the module configuration files (/etc/apache2/
 - zzz-dir.conf: overrides the default serving directory index files configuration.
 - zzz-evasive.conf: overrides the default EVASIVE module configuration.
 - zzz-expires.conf: overrides and extends the default expirations time by type.
+- zzz-expires-cdn.conf: modern version for caching while using CDN.
+- zzz-expires-fingerprint.conf: modern version for caching while using fingerprinted URLs.
 - zzz-headers.conf: adds few HTTP request and response headers customizations.
 - zzz-log.conf: overrides log configuration.
 - zzz-mime.conf: adds more mime types.
@@ -62,6 +64,8 @@ Module mod_http2 must be enable to provides HTTP/2 support in SSL.
 ### Features
 
 - _common.conf: contains many files with common snippets.
+  - **access_control directory** contains Access control directives for application and static website.
+  - **security directory** contains security directives for HSTS and WordPress.
 - 000-default: contains the default virtualhost configuration.
 - static.tld: contains the name-based vhost configuration for a static website.
 - app.tld: contains the name-based vhost configuration for a PHP application.
